@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>HubPress</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//snowshow.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//snowshow.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://snowshow.github.io/2015/04/27/HubPress.html" />
+    
+    <meta property="og:site_name" content="Just a test" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="HubPress" />
+    <meta property="og:description" content="What Is HubPress? HubPress is a free, open source tool you can use to build a rich, AsciiDoc based blog using GitHub Pages! Created and maintained by Anthonny Quérouil (twitter @anthonny_q). While HubPress may appear feature-complete, it is actually..." />
+    <meta property="og:url" content="https://snowshow.github.io/2015/04/27/HubPress.html" />
+    <meta property="article:published_time" content="2015-04-26T22:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-04-27T15:28:19.047Z" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="HubPress" />
+    <meta name="twitter:description" content="What Is HubPress? HubPress is a free, open source tool you can use to build a rich, AsciiDoc based blog using GitHub Pages! Created and maintained by Anthonny Quérouil (twitter @anthonny_q). While HubPress may appear feature-complete, it is actually..." />
+    <meta name="twitter:url" content="https://snowshow.github.io/2015/04/27/HubPress.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Just a test",
+    "author": {
+        "@type": "Person",
+        "name": "Michael Kheyfets",
+        "image": "https://avatars.githubusercontent.com/u/1181429?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": ""
+    },
+    "headline": "HubPress",
+    "url": "https://snowshow.github.io/2015/04/27/HubPress.html",
+    "datePublished": "2015-04-26T22:00:00.000Z",
+    "dateModified": "2015-04-27T15:28:19.047Z",
+    "description": "What Is HubPress? HubPress is a free, open source tool you can use to build a rich, AsciiDoc based blog using GitHub Pages! Created and maintained by Anthonny Quérouil (twitter @anthonny_q). While HubPress may appear feature-complete, it is actually..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Just a test" href="https://snowshow.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://snowshow.github.io">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://snowshow.github.io/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">HubPress</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-04-27">27 April 2015</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="sect1">
+<h2 id="_what_is_hubpress">What Is HubPress?</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="http://hubpress.io/img/editor.png" alt="editor.png">
+</div>
+</div>
+<div class="paragraph">
+<p>HubPress is a free, open source tool you can use to build a rich, AsciiDoc based blog using GitHub Pages!</p>
+</div>
+<div class="paragraph">
+<p>Created and maintained by <a href="http://github.com/anthonny">Anthonny Quérouil</a> (twitter <a href="http://twitter.com/anthonny_q">@anthonny_q</a>).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+While HubPress may appear feature-complete, it is actually in Tech Preview. Bugs are inevitible, so if you find something is not behaving the way you think it should, please raise a bug and the project team will address it as soon as possible.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Documentation is rapidly evolving as the project gains momentum. Check back regularly for more tips on how to use HubPress. If you see something wrong with the documentation, please raise a bug. Your help with improving every aspect of HubPress is greatly appreciated. Pull Requests are <strong>always</strong> welcome.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_browser_compatibility">Browser compatibility</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>HubPress is compatible with Chrome Desktop, Firefox Desktop, and Chrome for Android.</p>
+</div>
+<div class="paragraph">
+<p>Chrome Beta for Android will be fully compatible soon, but is not currently supported because of bugs with IndexedDB. While using HubPress Preview, use Chrome for Android only.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_getting_started">Getting Started</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_installation">Installation</h3>
+<div class="sect3">
+<h4 id="_fork_the_repository">Fork the repository</h4>
+<div class="paragraph">
+<p>Click the Fork icon <span class="image"><img src="http://hubpress.io/img/fork-icon.png" alt="Fork" width="80"></span> to create a copy of this repository within your GitHub account.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_use_the_github_io_domain">Use the github.io domain</h4>
+<div class="paragraph">
+<p>If you have never used your GitHub Pages domain before, you can use this procedure to quickly set up HubPress. With this method, only a few steps are required to get HubPress deployed and ready for use.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+If you are currently using your <code>username.github.io</code> GitHub Pages domain for another project, or if you want to use a custom domain name, skip to the next procedure for instructions.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Rename your repository to <code>&lt;username&gt;.github.io</code></p>
+</li>
+<li>
+<p>Set values in <code>hubpress/config.json</code></p>
+<div class="paragraph">
+<p><span class="image"><img src="http://hubpress.io/img/edit-config.png" alt="Edit config"></span></p>
+</div>
+<div class="paragraph">
+<p>The following parameters are mandatory :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>username</code>, which is your GitHub user name,</p>
+</li>
+<li>
+<p><code>repositoryName</code>, which is the new name of the repository fork, <code>&lt;username&gt;.github.io</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Commit the changes, and open the GitHub Pages domain:  <code><a href="https://&lt;username&gt;.github.io/" class="bare">https://&lt;username&gt;.github.io/</a></code>.</p>
+</li>
+<li>
+<p>The following screen indicates you have correctly configured HubPress</p>
+<div class="paragraph">
+<p><span class="image"><img src="http://hubpress.io/img/home-install.png" alt="Install complete" width="300"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_use_a_custom_domain_or_github_page_domain_already_in_use">Use a Custom Domain or GitHub Page Domain Already In Use</h4>
+<div class="paragraph">
+<p>If you want your blog to be available on a custom domain, or you are already using your GitHub Pages domain to host another project, some extra configuration is required.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the repository settings, set the default branch to <code>gh-pages</code> :</p>
+<div class="paragraph">
+<p><span class="image"><img src="http://hubpress.io/img/settings-gh-pages.png" alt="Settings gh-pages" width="400"></span></p>
+</div>
+</li>
+<li>
+<p>Switch your repository to the branch <strong>gh-pages</strong></p>
+<div class="paragraph">
+<p><span class="image"><img src="http://hubpress.io/img/switch-gh-pages.png" alt="Install complete" width="300"></span></p>
+</div>
+</li>
+<li>
+<p>Set the required values in `hubpress/config.json</p>
+<div class="paragraph">
+<p><span class="image"><img src="http://hubpress.io/img/edit-config-gh-pages.png" alt="Edit config"></span></p>
+</div>
+<div class="paragraph">
+<p>The following parameters are mandatory :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>username</code>, which is your GitHub user name,</p>
+</li>
+<li>
+<p><code>repositoryName</code>, which is the repository fork. For example, <code>hubpress.io</code> if you did not rename it.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Commit the changes, and open the GitHub Pages domain:  <code><a href="https://&lt;username&gt;.github.io/&lt;repositoryName&gt;/" class="bare">https://&lt;username&gt;.github.io/&lt;repositoryName&gt;/</a></code>.</p>
+</li>
+<li>
+<p>The following screen indicates you have correctly configured HubPress</p>
+<div class="paragraph">
+<p><span class="image"><img src="http://hubpress.io/img/home-install.png" alt="Install complete" width="300"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_administration_consoledddd">Administration Consoledddd</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The HubPress Administration Console is available at <strong>/hubpress</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><a href="https://&lt;username&gt;.github.io/hubpress/" class="bare">https://&lt;username&gt;.github.io/hubpress/</a></code> for GitHub Hosted blogs, or</p>
+</li>
+<li>
+<p><code><a href="https://&lt;username&gt;.github.io/&lt;repositoryName&gt;/hubpress/" class="bare">https://&lt;username&gt;.github.io/&lt;repositoryName&gt;/hubpress/</a></code> for Domain Hosted blogs.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_log_into_the_administration_console">Log Into the Administration Console</h3>
+<div class="paragraph">
+<p><span class="image"><img src="http://hubpress.io/img/login.png" alt="Install complete" width="300"></span></p>
+</div>
+<div class="paragraph">
+<p>Enter your GitHub credentials to log into HubPress Admin.</p>
+</div>
+<div class="paragraph">
+<p>Once you authenticate, a personal token is created for future calls from HubPress to the GitHub API.</p>
+</div>
+<div class="paragraph">
+<p>This is synchronized across all sessions of HubPress, so if you open the Administration Console on your PC and then your Tablet, the token is applicable to all devices.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_settings_page">Settings Page</h3>
+<div class="paragraph">
+<p>You can configure basic blog settings (such as CNAME and Pagination) and social media accounts you want to connect to your blog.</p>
+</div>
+<div class="sect3">
+<h4 id="_meta">Meta</h4>
+<div class="paragraph">
+<p>This section contains basic information configured in the <code>/hubpress/config.json</code> file.</p>
+</div>
+<div class="paragraph">
+<p>The following fields are configurable:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Git CNAME</dt>
+<dd>
+<p>Lets you specify a custom domain name for your blog. See <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">Setting Up A Custom Domain</a> for instructions about setting up a CNAME for your blog.</p>
+</dd>
+<dt class="hdlist1">Live Preview Render Delay</dt>
+<dd>
+<p>Controls how long the live render takes to refresh, in milliseconds. For fast typists, setting this field to a value over <code>2000</code> (two seconds) will result in a smoother editing experience because the live preview will not be regenerated so frequently. Setting this value below <code>2000</code> will result in the live preview refreshing faster, but may result in some visible cursor delay when typing.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_site">Site</h4>
+<div class="sect4">
+<h5 id="_title_and_description">Title and Description</h5>
+<div class="paragraph">
+<p>The <strong>Title</strong> and <strong>Description</strong> fields allow you to give your blog a name, and tell visitors what they can expect from your blog posts.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Logo</strong> and <strong>Cover Image</strong> fields can be used the following ways:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A HTML link to an image hosting service. For example gravatar.</p>
+</li>
+<li>
+<p>A link to an image committed to the /images directory of your blog repository.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+See the <code>/images/README.adoc</code> file for tips about embedding images into your blog posts.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_theme">Theme</h5>
+<div class="paragraph">
+<p>The <strong>Theme</strong> is selectable from the list of themes stored in the <code>/themes</code> directory. Specify it according to it is spelled in it&#8217;s containing folder.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_google_analytics">Google Analytics</h5>
+<div class="paragraph">
+<p>The <strong>Google Analytics</strong> field takes the unique Google Analytics code generated for the site.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_disqus_shortname">Disqus Shortname</h5>
+<div class="paragraph">
+<p>The <strong>Disqus shortname</strong> field takes your Disqus URL/shortname that is specified when you register a new site for Disqus. Only the shortname is required, not a link to your profile page.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_social_network">Social Network</h4>
+<div class="paragraph">
+<p>All fields in this group require full URLs to your public profile page. The way these values are rendered on your blog depends on the theme selected.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_managing_posts">Managing Posts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you first start HubPress, the <strong>Posts</strong> view is empty. As you create blog posts, the page populates with the list of posts on the left, and a live preview of the blog post itself on the right.</p>
+</div>
+<div class="sect2">
+<h3 id="_writing_a_blog_post_with_hubpress">Writing A Blog Post with HubPress</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you have never used AsciiDoc before to write content, the <a href="http://asciidoctor.org/docs/asciidoc-writers-guide/">AsciiDoctor Writer&#8217;s Guide</a> should be your first stop in your journey. The guide provides both basic and advanced mark-up examples for you to copy and use.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>HubPress Editor displays the AsciiDoc code on the left, and the live preview on the right.</p>
+</div>
+<div class="sect3">
+<h4 id="_blog_title_and_headings">Blog Title, and Headings</h4>
+<div class="paragraph">
+<p>The blog title is always Level 1 in an AsciiDoc post. For example, <code>= Blog Title</code> sets the name of the Blog Post to <code>Blog Title</code>.</p>
+</div>
+<div class="paragraph">
+<p>A <code>= Blog Title</code> is required for saving it successfully.</p>
+</div>
+<div class="paragraph">
+<p>If you want a first-level heading you use <code>== First Level Heading</code>, and so on to create other nested headings.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_hubpress_parameters">HubPress Parameters</h4>
+<div class="paragraph">
+<p>HubPress allows you to alter characteristics of each blog post using attributes.</p>
+</div>
+<div class="sect4">
+<h5 id="__hp_image_for_blog_post_cover_images">:hp-image: for Blog Post Cover Images</h5>
+<div class="paragraph">
+<p>If you want to add a cover image to your Blog Post, set the <code>hp-image</code> attribute.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>:hp-image: Example</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>= Blog Title
+:hp-image: a-cover-image.jpg</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Because HubPress defaults the <code>/images</code> directory as the root for all images, you only need to declare the filename of the image. Because of this, you may want to consider creating a <code>/covers</code> directory in your repository to group the cover images together.
+Naming the cover images consistently will make it very easy to apply to every post. If you have a theme to your blog, this allows your readers to get a visual clue as to what the post is about.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The themes that currently support blog post cover images are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Saga</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__published_at_to_alter_the_publication_date">:published_at: to alter the Publication Date</h4>
+<div class="paragraph">
+<p>By default, the publication date is the date you created the Blog Post. You can force the publication date by adding the <code>:published_at:</code> attribute.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>:published_at: Example</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>= Blog Title
+:published_at: 2015-01-31</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__hp_tags_for_metadata_tags">:hp-tags: for Metadata Tags</h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Categories are not supported.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Add tags by using the <code>hp-tags</code> attribute.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>:hp-tags: Example</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>= Blog Title
+:hp-tags: HubPress, Blog, Open Source,</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__hp_alt_title_to_specify_an_alternative_title">:hp-alt-title: to Specify an Alternative Title</h4>
+<div class="paragraph">
+<p>Specify an alternative title using the <code>hp-alt-title</code> attribute.</p>
+</div>
+<div class="paragraph">
+<p>The alternative title is used instead of the HTML file name generated by HubPress.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>:hp-alt-title: Example</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>= 大千世界
+:hp-alt-title: My English Title</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_images">Adding Images</h4>
+<div class="sect4">
+<h5 id="_push_images_to_github_repository">Push Images to GitHub Repository</h5>
+<div class="paragraph">
+<p>You can use Git command line or a Git app to add images to your blog posts:
+edededededed</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>image::&lt;filename&gt;[]</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>See <a href="http://asciidoctor.org/docs/asciidoc-writers-guide/" class="bare">http://asciidoctor.org/docs/asciidoc-writers-guide/</a> for complex examples of Image syntax.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If you are embedding images from a hosted source&#8201;&#8212;&#8201;such as instagram, another GitHub repository, or any photo hosting sites&#8201;&#8212;&#8201;put the full URL to the image in place of the <code>&lt;filename&gt;</code>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Hosted Image Embed</div>
+<div class="content">
+<pre>image::http://&lt;full path to image&gt;[]</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_using_github_issues_as_an_image_hosting_container">Using GitHub Issues as an Image Hosting Container</h5>
+<div class="paragraph">
+<p>You can use a single issue as an image container for a blog post containing many issues by uploading multiple images as comments. Alternatively, you can use multiple issues to store individual images. Whatever works best for you, and your organization style. Watch this five minute video for a demonstration about how to use GitHub Issues and Cloud Hosting services as embed targets, and some bonus tips on using the <code>image</code> AsciiDoc syntax.</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="//www.youtube.com/embed/KoaGU91qJv8?rel=0&amp;list=" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_embedding_videos">Embedding Videos</h4>
+<div class="paragraph">
+<p>HubPress allows you to embed video directly into your blog post by using a quick notation in your blog post. You don&#8217;t need to put it the full URL: all you need is the unique video ID.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>video::[unique_youtube_video_id][youtube | vimeo]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">YouTube Video Embed</div>
+<div class="content">
+<pre class="highlight"><code>video::KCylB780zSM[youtube]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Vimeo Video Embed</div>
+<div class="content">
+<pre class="highlight"><code>video::67480300[vimeo]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_updating_hubpress">Updating HubPress</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Because HubPress is hosted on GitHub, you can update by pulling down the latest changes from the HubPress master repository.</p>
+</div>
+<div class="paragraph">
+<p>To learn how to do this correctly (there&#8217;s a trick to it the first time you pull changes from upstream), you can watch the following video to learn the correct process.</p>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="//www.youtube.com/embed/KCylB780zSM?rel=0&amp;list=" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://www.youtube.com/watch?v=KCylB780zSM">Updating HubPress</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting">Troubleshooting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If something is not working as you expect, some of these tips may help.</p>
+</div>
+<div class="sect2">
+<h3 id="_resetting_blog_database_on_android">Resetting Blog Database on Android</h3>
+<div class="paragraph">
+<p>Sometimes the HubPress local database becomes out-of-sync with your published blog. This can happen because you are editing your blog on your PC, then switch over to your tablet.</p>
+</div>
+<div class="paragraph">
+<p>HubPress works on a locally-stored database specific to your Browser, so if you switch devices&#8201;&#8212;&#8201;and subsequently switch browsers&#8201;&#8212;&#8201;you lose the synchronicity between browsers.</p>
+</div>
+<div class="paragraph">
+<p>To return your instance of HubPress to that of the published blog, clear the browser Cache and Data in Settings &gt; Apps. When you do this, HubPress is forced to rebuild the local database, and will reflect the state of the blog in GitHub.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_credits">Credits</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Thanks to <a href="https://github.com/jaredmorgs">Jared Morgan</a> for initially tidying up the README you see here, and continuing to be the "docs guy" for HubPress.
+Thanks to <a href="https://github.com/takkyuuplayer">takkyuuplayer</a>, <a href="https://github.com/hinaloe">hinaloe</a> to have translated the README into Japanese</p>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/1181429?v=3)"><span class="hidden">Michael Kheyfets's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">Michael Kheyfets</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=HubPress&amp;url=https://snowshow.github.io/2015/04/27/HubPress.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://snowshow.github.io/2015/04/27/HubPress.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://snowshow.github.io/2015/04/27/HubPress.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://snowshow.github.io">Just a test</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//snowshow.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//snowshow.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
