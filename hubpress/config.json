@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "snowshow",
-    "repositoryName": "snowshow.github.io",
-    "branch": "master"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"snowshow","repositoryName":"snowshow.github.io","branch":"master"},"site":{"title":"Just a test","description":"Just a test description","url":"https://snowshow.github.io"},"socialnetwork":{},"theme":{"name":"Casper","url":"//snowshow.github.io/themes/Casper"}}
